@@ -7,7 +7,11 @@ export const metadata = {
 	description: "Discover and share your favorite hikes, climbs, and more!",
 };
 
-const RootLayout = ({ children }) => {
+interface Props {
+	children: React.ReactNode;
+}
+
+const RootLayout: React.FC<Props> = ({ children }) => {
 	return (
 		<html lang="en">
 			<body>
