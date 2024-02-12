@@ -2,7 +2,7 @@ import "@styles/globals.css";
 
 export const metadata = {
 	title: "Trip Report",
-	description: "Discover and share your favorite trips",
+	description: "Discover and share your favorite hikes, climbs, and more!",
 };
 
 const RootLayout = ({ children }) => {
