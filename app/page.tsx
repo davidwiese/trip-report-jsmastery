@@ -1,3 +1,5 @@
+import Feed from "@components/Feed";
+
 const Home = () => {
 	return (
 		<section className="w-full flex-center flex-col">
@@ -11,6 +13,8 @@ const Home = () => {
 			<p className="text-center mt-5 text-lg text-gray-600 sm:text-xl max-w-2xl">
 				Find out where others are hiking and learn about current conditions.
 			</p>
+
+			<Feed />
 		</section>
 	);
 };
