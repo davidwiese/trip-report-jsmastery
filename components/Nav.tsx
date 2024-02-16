@@ -39,7 +39,7 @@ const Nav = () => {
 				{session?.user ? (
 					<div className="flex gap-3 md:gap-5">
 						<Link
-							href="/create-prompt"
+							href="/create-report"
 							className="rounded-full border border-black bg-black py-1.5 px-5 text-white transition-all hover:bg-white hover:text-black text-center text-sm font-inter flex items-center justify-center"
 						>
 							Create Report

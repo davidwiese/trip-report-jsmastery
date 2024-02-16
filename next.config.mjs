@@ -4,7 +4,15 @@ const nextConfig = {
 		serverComponentsExternalPackages: ["mongoose"],
 	},
 	images: {
-		domains: ["lh3.googleusercontent.com"],
+		remotePatterns: [
+			{
+				protocol: "https", // Specify the protocol
+				hostname: "lh3.googleusercontent.com", // The domain name
+				// Optionally, you can specify a port and pathname patterns
+				// port: '',
+				// pathname: '/path/to/images/*',
+			},
+		],
 	},
 	webpack(config) {
 		config.experiments = {
