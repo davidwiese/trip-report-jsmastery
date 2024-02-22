@@ -1,6 +1,21 @@
 import PromptCard from "./PromptCard";
+import { ReactNode } from "react";
 
-const Profile = ({ name, desc, data, handleEdit, handleDelete }) => {
+interface ProfileProps {
+	name: string;
+	desc: string;
+	data: Array<{ _id: string /* Other properties */ }>;
+	handleEdit: (post: any) => void; // Assuming 'post' is of type 'any'
+	handleDelete: (post: any) => void; // Assuming 'post' is of type 'any'
+}
+
+const Profile: React.FC<ProfileProps> = ({
+	name,
+	desc,
+	data,
+	handleEdit,
+	handleDelete,
+}) => {
 	return (
 		<section className="w-full">
 			<h1 className="head_text text-left">
@@ -15,6 +30,7 @@ const Profile = ({ name, desc, data, handleEdit, handleDelete }) => {
 							post={post}
 							handleEdit={() => handleEdit && handleEdit(post)}
 							handleDelete={() => handleDelete && handleDelete(post)}
+							handleTagClick={undefined}
 						/>
 					))}
 			</div>
